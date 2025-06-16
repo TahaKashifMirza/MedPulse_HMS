@@ -1,0 +1,205 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f1f6f7; /* Light background color with a softer, warmer tone */
+    border-radius: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem; /* Added margin from the top to ensure it doesn't go behind the navbar */
+}
+
+.hero-left {
+    flex: 1;
+    padding-right: 40px;
+    text-align: left;
+}
+
+.hero-main-heading {
+    font-size: 2.4rem;
+    color: #333;
+    font-family: antony;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-subheading {
+    font-size: 1.4rem;
+    color: #1a8363; /* Green color matching hospital theme */
+    font-family: antony;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: #555;
+    font-family: antony;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.hero-cta-btn {
+    padding: 15px 40px;
+    background-color: #1a8363;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.hero-right {
+    flex: 0.5;
+    padding-left: 80px;
+}
+
+.hero-image-container {
+    width: 100%;
+    max-width: 350px; /* Control the image size to be smaller */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Adding some background animation */
+.hero-main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4));
+    z-index: -1;
+    animation: backgroundAnimate 8s ease infinite;
+}
+
+@keyframes backgroundAnimate {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* Media Queries */
+
+/* Small screens (mobile) */
+@media (max-width: 600px) {
+    .hero-main {
+        margin-top: 5rem;
+        flex-direction: column; /* Stack the content vertically */
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .hero-left {
+        padding-right: 0; /* Remove padding */
+        text-align: center; /* Center the text */
+        margin-bottom: 20px; /* Add margin for spacing */
+    }
+
+    .hero-main-heading {
+        font-size: 2rem; /* Adjust font size */
+        margin-bottom: 10px; /* Adjust margin */
+    }
+
+    .hero-subheading {
+        font-size: 1.2rem; /* Adjust font size */
+        margin-bottom: 15px; /* Adjust margin */
+    }
+
+    .hero-description {
+        font-size: 1rem; /* Adjust font size */
+        margin-bottom: 20px; /* Adjust margin */
+    }
+
+    .hero-cta-btn {
+        font-size: 0.9rem; /* Adjust font size */
+        padding: 12px 30px; /* Adjust padding */
+    }
+
+    .hero-right {
+        flex: 1; /* Allow the right section to take full width */
+        padding-left: 0; /* Remove padding */
+        text-align: center; /* Center the image */
+        margin-top: 20px; /* Add spacing between text and image */
+    }
+
+    .hero-image-container {
+        max-width: 280px; /* Reduce image size */
+    }
+
+    .hero-image {
+        object-fit: contain; /* Adjust image fit */
+    }
+}
+
+/* Tablets (portrait) */
+@media (max-width: 768px) {
+    .hero-main {
+        flex-direction: column; /* Stack the content vertically */
+        padding: 30px; /* Adjust padding */
+    }
+
+    .hero-left {
+        padding-right: 0; /* Remove padding */
+        text-align: center; /* Center the text */
+        margin-bottom: 20px; /* Add margin for spacing */
+    }
+
+    .hero-main-heading {
+        font-size: 2.2rem; /* Adjust font size */
+        margin-bottom: 15px; /* Adjust margin */
+    }
+
+    .hero-subheading {
+        font-size: 1.3rem; /* Adjust font size */
+        margin-bottom: 15px; /* Adjust margin */
+    }
+
+    .hero-description {
+        font-size: 1.05rem; /* Adjust font size */
+        margin-bottom: 25px; /* Adjust margin */
+    }
+
+    .hero-cta-btn {
+        font-size: 1rem; /* Adjust font size */
+        padding: 12px 35px; /* Adjust padding */
+    }
+
+    .hero-right {
+        flex: 1; /* Allow the right section to take full width */
+        padding-left: 0; /* Remove padding */
+        text-align: center; /* Center the image */
+    }
+
+    .hero-image-container {
+        max-width: 300px; /* Adjust image size */
+    }
+}
+

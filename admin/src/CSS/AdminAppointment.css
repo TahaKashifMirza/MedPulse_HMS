@@ -1,0 +1,236 @@
+/* AdminAppointment.css */
+
+/* Main container for the Admin Appointment Management */
+.adminappointment {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f9;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.adminappointment h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.adminappointment table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.adminappointment th,
+.adminappointment td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+  word-wrap: break-word; /* Ensures text wraps inside cells */
+}
+
+.adminappointment th {
+  background-color: #1a8363;
+  color: white;
+}
+
+.adminappointment tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.adminappointment td button {
+  padding: 8px 12px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.adminappointment td button.cancel {
+  background-color: #f72010;
+}
+
+.adminappointment td button.approve {
+  background-color: #1a8363;
+}
+
+.delete {
+  background-color: red;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-color: darkred;
+}
+
+.adminappointment .status {
+  font-weight: bold;
+}
+
+.adminappointment .status.Pending {
+  color: black;
+}
+
+.adminappointment .status.Approved {
+  color: #1a8363;
+}
+
+.adminappointment .status.Cancelled {
+  color: red;
+}
+
+/* Media Queries for Full Responsiveness */
+
+/* Large Tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+.adminappointment {
+  width: 95%;
+  padding: 15px;
+}
+
+.adminappointment h1 {
+  font-size: 1.8rem;
+}
+
+.adminappointment th, .adminappointment td {
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.adminappointment td button {
+  font-size: 0.85rem;
+  padding: 6px 10px;
+}
+}
+
+/* Small Tablets & Large Phones (max-width: 768px) */
+@media screen and (max-width: 768px) {
+.adminappointment {
+  width: 100%;
+  padding: 10px;
+}
+
+.adminappointment h1 {
+  font-size: 1.5rem;
+}
+
+.adminappointment table {
+  display: block;
+  overflow-x: auto;
+}
+
+.adminappointment th, .adminappointment td {
+  padding: 8px;
+  font-size: 0.9rem;
+}
+
+.adminappointment td button {
+  font-size: 0.8rem;
+  padding: 5px 8px;
+}
+}
+
+/* Mobile Phones (max-width: 600px) */
+@media screen and (max-width: 600px) {
+.adminappointment {
+  padding: 8px;
+}
+
+.adminappointment h1 {
+  font-size: 1.3rem;
+}
+
+.adminappointment table {
+  font-size: 0.85rem;
+  display: block;
+  overflow-x: auto;
+}
+
+.adminappointment th, .adminappointment td {
+  padding: 6px;
+  font-size: 0.85rem;
+}
+
+.adminappointment td button {
+  font-size: 0.75rem;
+  padding: 4px 6px;
+}
+
+/* Stack buttons in one column */
+.adminappointment td {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+/* Small Mobiles (max-width: 420px) */
+@media screen and (max-width: 420px) {
+.adminappointment h1 {
+  font-size: 1.2rem;
+}
+
+.adminappointment table {
+  width: 100%;
+  font-size: 0.75rem;
+}
+
+.adminappointment th, .adminappointment td {
+  font-size: 0.75rem;
+  padding: 5px;
+}
+
+.adminappointment td button {
+  font-size: 0.7rem;
+  padding: 3px 5px;
+  margin: 2px;
+}
+
+.delete {
+  padding: 4px 6px;
+}
+
+/* Stack each row in a card-like format for better readability */
+.adminappointment table,
+.adminappointment thead,
+.adminappointment tbody,
+.adminappointment th,
+.adminappointment td,
+.adminappointment tr {
+  display: block;
+}
+
+.adminappointment thead {
+  display: none; /* Hide table header */
+}
+
+.adminappointment tr {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.adminappointment td {
+  text-align: left;
+  padding: 6px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adminappointment td::before {
+  content: attr(data-label);
+  font-weight: bold;
+}
+}

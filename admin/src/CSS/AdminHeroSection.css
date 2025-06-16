@@ -1,0 +1,189 @@
+/* General styling */
+.admin-hero-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #3ac0f5;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.admin-hero-content {
+  text-align: center;
+  max-width: 100%;
+  width: 100%;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.admin-hero-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.admin-hero-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.admin-hero-paragraph {
+  font-size: 1rem;
+  color: #7f8c8d;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Mobile Screens (up to 420px) */
+@media (max-width: 420px) {
+  .admin-hero-container {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .admin-hero-content {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .admin-hero-logo {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+
+  .admin-hero-heading {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .admin-hero-paragraph {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+}
+
+/* Tablet Screens (421px to 768px) */
+@media (max-width: 768px) and (min-width: 421px) {
+  .admin-hero-container {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .admin-hero-content {
+    padding: 30px;
+    width: 90%;
+  }
+
+  .admin-hero-logo {
+    width: 130px;
+    margin-bottom: 25px;
+  }
+
+  .admin-hero-heading {
+    font-size: 2.2rem;
+    margin-bottom: 18px;
+  }
+
+  .admin-hero-paragraph {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    padding: 0 15px;
+  }
+}
+
+/* Small Laptop Screens (769px to 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .admin-hero-container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .admin-hero-content {
+    padding: 35px;
+    width: 85%;
+  }
+
+  .admin-hero-logo {
+    width: 140px;
+    margin-bottom: 30px;
+  }
+
+  .admin-hero-heading {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+
+  .admin-hero-paragraph {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+}
+
+/* Large Laptop Screens (1025px to 1440px) */
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .admin-hero-container {
+    flex-direction: column;
+    padding: 0 30px;
+  }
+
+  .admin-hero-content {
+    padding: 40px;
+    width: 80%;
+  }
+
+  .admin-hero-logo {
+    width: 150px;
+    margin-bottom: 35px;
+  }
+
+  .admin-hero-heading {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+  }
+
+  .admin-hero-paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+    padding: 0 20px;
+  }
+}
+
+/* Extra Large Screens (1441px and up) */
+@media (min-width: 1441px) {
+  .admin-hero-container {
+    padding: 0 40px;
+  }
+
+  .admin-hero-content {
+    padding: 50px;
+    width: 70%;
+  }
+
+  .admin-hero-logo {
+    width: 160px;
+    margin-bottom: 40px;
+  }
+
+  .admin-hero-heading {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+  }
+
+  .admin-hero-paragraph {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    padding: 0 25px;
+  }
+}

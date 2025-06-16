@@ -1,0 +1,192 @@
+/* AdminRegister.css */
+.admin-register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    background-color: #f0f0f0;
+    padding: 0 15px;
+    box-sizing: border-box; /* Ensures padding is considered for layout */
+}
+
+.admin-register-box {
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    background-color: white;
+    margin: 0 auto; /* Centers the box */
+}
+
+.admin-register-logo {
+    width: 130px;
+    margin-bottom: 5px;
+}
+
+.admin-register-heading {
+    font-size: 24px;
+    font-family: Antony;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.admin-register-paragraph {
+    font-size: 16px;
+    font-family: Antony;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+.admin-register-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.admin-register-input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.admin-register-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.admin-register-input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.admin-register-input:focus {
+    border-color: #000000;
+}
+
+.admin-register-button {
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #1a8363;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.admin-register-error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .admin-register-box {
+        padding: 20px;
+    }
+
+    .admin-register-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .admin-register-input-group {
+        width: 100%; /* Full width for larger tablets */
+    }
+}
+
+@media (max-width: 992px) {
+    .admin-register-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .admin-register-input-group {
+        width: 100%; /* Full width on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-register-container {
+        height: auto; /* Allow the container to be flexible */
+        padding: 20px; /* Reduce the gap around the container */
+    }
+
+    .admin-register-box {
+        padding: 15px;
+        max-width: 100%; /* Ensure it takes full width on smaller screens */
+    }
+
+    .admin-register-input-group {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .admin-register-heading {
+        font-size: 22px;
+    }
+
+    .admin-register-paragraph {
+        font-size: 14px;
+    }
+
+    .admin-register-button {
+        font-size: 14px; /* Reduce button size */
+    }
+}
+
+@media (max-width: 576px) {
+    .admin-register-container {
+        padding: 15px; /* Smaller padding for very small screens */
+    }
+
+    .admin-register-box {
+        padding: 10px;
+        max-width: 100%; /* Ensure it takes up the full width */
+    }
+
+    .admin-register-heading {
+        font-size: 20px; /* Make heading slightly smaller */
+    }
+
+    .admin-register-paragraph {
+        font-size: 12px; /* Reduce paragraph size */
+    }
+
+    .admin-register-button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 420px) {
+    .admin-register-box {
+        padding: 10px;
+    }
+
+    .admin-register-heading {
+        font-size: 18px; /* Even smaller heading */
+    }
+
+    .admin-register-paragraph {
+        font-size: 12px;
+    }
+
+    .admin-register-button {
+        font-size: 12px; /* Smaller button text */
+        padding: 10px;
+    }
+}

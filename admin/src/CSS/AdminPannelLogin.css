@@ -1,0 +1,154 @@
+/* AdminPannelLogin.css */
+.admin-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 0 15px;
+}
+
+.admin-login-box {
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    background-color: white;
+}
+
+.admin-login-logo {
+    width: 130px;
+    margin-bottom: 5px;
+}
+
+.admin-login-heading {
+    font-size: 24px;
+    font-family: Antony;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.admin-login-paragraph {
+    font-size: 16px;
+    font-family: Antony;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+.admin-login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-login-input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+}
+
+.admin-login-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 5px; /* Added bottom margin to create gap */
+    text-align: left;
+}
+
+.admin-login-input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.admin-login-input:focus {
+    border-color: #000000;
+}
+
+.admin-login-button {
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #1a8363;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-login-error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .admin-login-box {
+        max-width: 400px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-login-box {
+        max-width: 350px;
+        padding: 20px;
+    }
+    .admin-login-heading {
+        font-size: 20px;
+    }
+    .admin-login-paragraph {
+        font-size: 14px;
+    }
+    .admin-login-label {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-login-container {
+        padding: 0;
+    }
+    .admin-login-box {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+    .admin-login-heading {
+        font-size: 18px;
+    }
+    .admin-login-paragraph {
+        font-size: 12px;
+    }
+    .admin-login-label {
+        font-size: 12px;
+    }
+    .admin-login-button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    .admin-login-box {
+        padding: 15px;
+    }
+    .admin-login-heading {
+        font-size: 16px;
+    }
+    .admin-login-paragraph {
+        font-size: 12px;
+    }
+    .admin-login-label {
+        font-size: 12px;
+    }
+    .admin-login-button {
+        font-size: 14px;
+    }
+}

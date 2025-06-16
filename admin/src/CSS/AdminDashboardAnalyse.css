@@ -1,0 +1,138 @@
+/* General Styles for the Page */
+.hmsanalysis-dashboard {
+  background: linear-gradient(135deg, #f3f4f7, #d1d8e0);
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hmsanalysis-title {
+  text-align: center;
+  color: #4a90e2;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.hmsanalysis-subtitle {
+  text-align: center;
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.hmsanalysis-chart-container {
+  width: 80%;
+  height: 400px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect on chart container */
+.hmsanalysis-chart-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling the Canvas */
+.canvas-container canvas {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Tooltip custom styling */
+.chartjs-tooltip {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: white !important;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.chartjs-tooltip .tooltip-title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile devices (width ≤ 420px) */
+@media (max-width: 420px) {
+  .hmsanalysis-title {
+    font-size: 1rem;
+  }
+
+  .hmsanalysis-subtitle {
+    font-size: 1rem;
+  }
+
+  .hmsanalysis-chart-container {
+    width: 90%;
+    height: 300px;
+    padding: 20px;
+  }
+}
+
+/* Tablets (width between 421px and 768px) */
+@media (max-width: 768px) and (min-width: 421px) {
+  .hmsanalysis-title {
+    font-size: 2rem;
+  }
+
+  .hmsanalysis-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hmsanalysis-chart-container {
+    width: 85%;
+    height: 350px;
+    padding: 25px;
+  }
+}
+
+/* Small Laptops and larger Tablets (width between 769px and 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .hmsanalysis-title {
+    font-size: 2.2rem;
+  }
+
+  .hmsanalysis-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hmsanalysis-chart-container {
+    width: 75%;
+    height: 400px;
+    padding: 30px;
+  }
+}
+
+/* Laptops and larger screens (width ≥ 1025px) */
+@media (min-width: 1025px) {
+  .hmsanalysis-title {
+    font-size: 2.5rem;
+  }
+
+  .hmsanalysis-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hmsanalysis-chart-container {
+    width: 80%;
+    height: 400px;
+    padding: 30px;
+  }
+}

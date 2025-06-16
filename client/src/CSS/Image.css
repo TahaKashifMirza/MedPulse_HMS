@@ -1,0 +1,43 @@
+/* Base styles for large screens (Desktop) */
+.imagemain-header {
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    background-image: url('/Images/Doctors.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.6);
+}
+
+/* Tablet devices (Portrait) */
+@media screen and (max-width: 1024px) {
+  .imagemain-header {
+      height: 100vh; /* Adjusting height for smaller screens */
+      background-size: cover;
+      box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.6); /* Slightly reduce shadow */
+  }
+}
+
+/* Large Mobile devices */
+@media screen and (max-width: 768px) {
+  .imagemain-header {
+      height: 80vh; /* Adjust height for mobile screens */
+      background-size: cover;
+      background-position: center top; /* Adjust background positioning */
+      box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.6); /* Adjust shadow for better readability */
+  }
+}
+
+/* Small Mobile devices */
+@media screen and (max-width: 480px) {
+  .imagemain-header {
+      height: 60vh; /* Further decrease height for very small screens */
+      background-size: cover;
+      background-position: center; /* Keep background centered */
+      box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.6); /* Further reduce shadow */
+  }
+}

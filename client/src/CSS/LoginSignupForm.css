@@ -1,0 +1,345 @@
+/* General Styles for the Body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.form-container {
+    display: flex;
+    margin-top: 6rem;
+    height: 800px; /* Adjusted height for both forms to be equal */
+    width: 1200px; 
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+    background-color: white;
+}
+
+/* Left Side */
+.form-left {
+    width: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a588a;
+    color: white;
+    text-align: center;
+}
+
+/* Right Side */
+.form-right {
+    width: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    transition: transform 0.5s ease;
+}
+
+/* Login Section */
+.login-main .form-left {
+    background-color: #2a588a;
+}
+
+.login-main .form-right {
+    background-color: #f4f4f4;
+}
+
+.login-main .input-field {
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.login-main button {
+    background-color: #1a8363;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    padding: 15px;
+}
+
+.login-main h1 {
+    font-family: antony;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.login-main p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    font-family: antony;
+}
+
+/* Signup Section */
+.signup-main .form-left {
+    background-color: #2a588a;
+}
+
+.signup-main .form-right {
+    background-color: #f4f4f4;
+}
+
+.signup-main .input-field {
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.signup-main button {
+    background-color: #1a8363;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    padding: 15px;
+}
+
+.signup-main-heading {
+    font-size: 1.7rem;
+    font-family: antony;
+}
+
+.signup-main h1 {
+    font-family: antony;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.signup-main p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+form input, form select {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Extra Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    body {
+        padding: 0 5px;
+        margin-top: 8rem;
+    }
+
+    .form-container {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        box-shadow: none;
+        padding: 10px;
+    }
+
+    .form-left, .form-right {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .login-main .input-field, .signup-main .input-field {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .login-main button, .signup-main button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .form-left h1, .form-right h1 {
+        font-size: 1.2rem;
+    }
+
+    .form-left p, .form-right p {
+        font-size: 0.9rem;
+    }
+
+    .signup-main-heading {
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 0 10px;
+    }
+
+    .form-container {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        box-shadow: none;
+        padding: 20px;
+    }
+
+    .form-left, .form-right {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .form-left h1, .form-right h1 {
+        font-size: 1.3rem;
+    }
+
+    .form-left p, .form-right p {
+        font-size: 1rem;
+    }
+
+    .login-main .input-field, .signup-main .input-field {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .login-main button, .signup-main button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .signup-main-heading {
+        font-size: 1.3rem;
+    }
+
+    .form-left {
+        text-align: center;
+    }
+
+    .form-right {
+        text-align: center;
+    }
+}
+
+/* Tablets and Smaller Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .form-container {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .form-left, .form-right {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .login-main .input-field, .signup-main .input-field {
+        font-size: 1rem;
+    }
+
+    .login-main h1, .signup-main h1 {
+        font-size: 1.5rem;
+    }
+
+    .login-main p, .signup-main p {
+        font-size: 1rem;
+    }
+
+    .signup-main-heading {
+        font-size: 1.5rem;
+    }
+
+    .form-left {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .form-right {
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+/* Small Desktops (max-width: 1280px) */
+@media (max-width: 1280px) {
+    .form-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-left, .form-right {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .login-main .input-field, .signup-main .input-field {
+        font-size: 1rem;
+    }
+
+    .login-main h1, .signup-main h1 {
+        font-size: 1.6rem;
+    }
+
+    .login-main p, .signup-main p {
+        font-size: 1.1rem;
+    }
+
+    .signup-main-heading {
+        font-size: 1.6rem;
+    }
+}
+
+/* Large Screens (min-width: 1281px) */
+@media (min-width: 1281px) {
+    .form-container {
+        width: 1200px;
+    }
+
+    .form-left, .form-right {
+        width: 50%;
+        padding: 30px;
+    }
+
+    .login-main .input-field, .signup-main .input-field {
+        font-size: 1.1rem;
+    }
+
+    .login-main h1, .signup-main h1 {
+        font-size: 2rem;
+    }
+
+    .login-main p, .signup-main p {
+        font-size: 1.2rem;
+    }
+
+    .signup-main-heading {
+        font-size: 1.7rem;
+    }
+}

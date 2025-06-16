@@ -1,0 +1,164 @@
+/* Main Container */
+.admin-messages-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header with Logo and Title */
+.admin-messages-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+}
+
+.admin-messages-logo {
+  width: 80px;
+  height: auto;
+  margin-right: 10px; /* Adds spacing between logo and heading */
+}
+
+.admin-messages-heading {
+  font-size: 1.5rem;
+  font-family: antony;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Message Section */
+.admin-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Individual Message Box */
+.admin-messages-box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #1a8363;
+  max-height: 150px; /* Limit height of message boxes */
+  overflow: hidden; /* Hide overflow if content exceeds the set height */
+}
+
+.admin-messages-box p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.admin-messages-box p strong {
+  color: #333;
+}
+
+.admin-messages-time {
+  font-size: 0.9rem;
+  color: #888;
+  text-align: right;
+  margin-top: 15px;
+}
+
+/* No Messages */
+.admin-messages-no-messages {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #777;
+  font-weight: 500;
+}
+
+/* Media Queries */
+
+/* Mobile Screens (max-width: 600px) */
+@media (max-width: 600px) {
+  .admin-messages-header {
+    flex-direction: column; /* Stack the logo and heading vertically */
+    align-items: center;
+    padding: 10px;
+  }
+
+  .admin-messages-logo {
+    width: 60px;
+  }
+
+  .admin-messages-heading {
+    font-size: 1.2rem; /* Reduce font size for mobile */
+    text-align: center;
+  }
+
+  .admin-messages-box {
+    padding: 15px;
+    max-height: none; /* Allow more content on smaller screens */
+  }
+
+  .admin-messages-box p {
+    font-size: 0.9rem;
+  }
+
+  .admin-messages-no-messages {
+    font-size: 1.2rem; /* Slightly larger text for visibility */
+  }
+}
+
+/* Tablets (min-width: 601px and max-width: 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .admin-messages-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .admin-messages-logo {
+    width: 70px;
+  }
+
+  .admin-messages-heading {
+    font-size: 1.3rem; /* Slightly smaller font for tablet */
+  }
+
+  .admin-messages-box {
+    padding: 12px;
+  }
+
+  .admin-messages-box p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Laptops and Desktops (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .admin-messages-header {
+    padding: 20px;
+  }
+
+  .admin-messages-logo {
+    width: 80px;
+  }
+
+  .admin-messages-heading {
+    font-size: 1.5rem; /* Default font size for larger screens */
+  }
+
+  .admin-messages-box {
+    padding: 15px;
+  }
+
+  .admin-messages-box p {
+    font-size: 1rem;
+  }
+}
