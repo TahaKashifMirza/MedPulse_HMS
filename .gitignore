@@ -1,0 +1,19 @@
+# Node.js Dependencies
+node_modules/
+.env
+package-lock.json
+
+# Logs
+logs/
+*.log
+
+# Build Files
+/dist
+/build
+/out
+.vscode/
+
+# Frontend Build
+/frontend/dist
+/frontend/.vite
+/frontend/node_modules
